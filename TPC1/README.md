@@ -14,7 +14,7 @@ Foi criada uma *string* inicial - **s = "TPC1 de PLN em EngBiom"** - usada até 
 
 Para o exercício 7 surgiu a necessidade de criar duas novas *strings* - **s1 = "Processamento de Linguagem Natural"** e **s2 = "Engenharia Biomédica"** usadas nos exercícios 7, 8 e 9.
 
-- Exercício 7 - foi criada a função ``def balanceadas(s1, s2)```. Esta função percorre cada caractere em **s1** e verifica se está em **s2**, retornando ```True```se todos os caracteres de **s1** estiverem presentes na *string* **s2** ou ```False``` caso contrário;
+- Exercício 7 - foi criada a função ```def balanceadas(s1, s2)```. Esta função percorre cada caractere em **s1** e verifica se está em **s2**, retornando ```True```se todos os caracteres de **s1** estiverem presentes na *string* **s2** ou ```False``` caso contrário;
 - Exercício 8 - foi criada a função ```def num_ocorrencias(s1, s2)``` que conta quantas vezes **s1** aparece dentro de **s2**;
 - Exercício 9 - foi criada a função ```def anagrama(s1, s2)```que ordena ambas as *strings* e compara-as, retornando ```True```se forem anagramas ou ```False``` caso contrário;
 
