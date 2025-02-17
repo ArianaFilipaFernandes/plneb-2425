@@ -1,2 +1,2 @@
 # plneb-2425
-Processamento de Linguagem Naturam em EngBiom
+Processamento de Linguagem Natural em EngBiom
