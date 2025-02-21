@@ -17,9 +17,9 @@ Usada a função ```re.search()``` que analisa a ```string``` e tenta encontrar 
 
 
 ### Alínea 1.3: 
-Usada a função ```re.findall()``` que encontra todas as
+Usada a função ```re.findall()``` que encontra todas as correspondênciasda palavra ```hello``` na ```string``` e devolve uma lista. Usada a ```flag``` ```re.IGNORECASE``` para não diferenciar maiúsculas de minúsculas.
 
 ***Expressão Regular:*** ```r'\bhello\b'```- usado ```\b``` no início e no fim da palavra ```hello``` para encontrar exatamente a correspondência desta, sem nada antes, nem depois.
 
-re.findall(pattern, string[, flags]) - encontra todas as correspondências que não se sobreponham da expressão regular pattern na string. Devolve uma lista.
+
 
