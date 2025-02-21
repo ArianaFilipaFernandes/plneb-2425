@@ -23,7 +23,7 @@ Usada a função ```re.findall()``` que encontra todas as correspondênciasda pa
 
 
 ### Alínea 1.4: 
-Usada a função ```re.sub(r'hello', '*YEP*', line, flags=re.IGNORECASE))``` que substitui todas as correspondências da palavra ```hello``` na ```line``` por a expressão ```*YEP*```. Usada a ```flag``` ```re.IGNORECASE``` para não diferenciar maiúsculas de minúsculas.
+Usada a função ```re.sub(r'hello', '*YEP*', line, flags=re.IGNORECASE)``` que substitui todas as correspondências da palavra ```hello``` na *string* ```line``` por a expressão ```*YEP*```. Usada a ```flag``` ```re.IGNORECASE``` para não diferenciar maiúsculas de minúsculas.
 
 
 
