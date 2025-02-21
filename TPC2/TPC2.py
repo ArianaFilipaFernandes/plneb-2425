@@ -11,8 +11,8 @@ line2 = "goodbye world"
 line3 = "hi, hello there"
 
 print("Alinea 1.1:", re.match(r'^hello\b', line1))
-print(re.match(r'^hello\b', line2))
-print(re.match(r'^hello\b', line3))
+print("Alinea 1.1:", re.match(r'^hello\b', line2))
+print("Alinea 1.1:", re.match(r'^hello\b', line3))
 
 # Alínea 1.2
 # Dada uma linha de texto, define um programa que determina se a palavra "hello" aparece em qualquer posição da linha.
