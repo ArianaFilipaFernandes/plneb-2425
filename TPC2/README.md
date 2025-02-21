@@ -13,5 +13,5 @@ Usada a função ```re.match()``` que analisa a ```string``` e tenta encontrar u
 ### Alínea 1.2: 
 Usada a função ```re.search()``` que analisa a ```string``` e tenta encontrar uma correspondência para a expressão regular ```r'\bhello\b'``` em qualquer posição da ```string```, devolvendo ```None```se não encontrar nenhuma. 
 
-***Expressão Regular:*** ```r'\bhello\b'```- usado ```\b``` no início e no fim da palavra encontrar a correspondência da palavra 'heelo' exatamente, sem nada antes, nem depois.
+***Expressão Regular:*** ```r'\bhello\b'```- usado ```\b``` no início e no fim da palavra 'hello' para encontrar exatamente a correspondência desta, sem nada antes, nem depois.
 
