@@ -65,7 +65,7 @@ Definida a seguinte função: ```def variavel_valida(string)``` que usa a funç�
 
 
 ### Exercício 8: 
-Definida a seguinte função: ```def inteiros(string)``` que usa a função ```re.findall`` para encontrar a expressão regular ```r'-?\b\d+\b'``` na *string*
+Definida a seguinte função: ```def inteiros(string)``` que usa a função ```re.findall``` para encontrar a expressão regular ```r'-?\b\d+\b'``` na *string*
 
 ***Expressão Regular:*** ```r'-?\b\d+\b'``` - Algumas dificuldades nesta expressão regular, pelo que o *output* obtido não é o correto, no entanto, o objetivo era que com ```-?``` pudessem ser considerados números negativos ou positivos, pois ```-``` poderia aparecer 0 ou 1 vez. Depois colocado *word boundary* antes e depois de ```\d+```, para que pudessem ser um ou mais dígitos.
 
