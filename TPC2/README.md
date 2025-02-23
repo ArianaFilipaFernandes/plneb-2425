@@ -49,7 +49,7 @@ Definida a seguinte função: ```def troca_de_curso(linha, novo_curso)``` que us
 
 
 ### Exercício 5: 
-Definida a seguinte função: ```def soma_string(linha)``` que usa a função ```re.split``` para dividir a *string* sempre que encontrar uma vírgula. Como devolve uma lista de *strings* foi usado ```map(int``` para converter a lista de *strings* em lista de números inteiros. Para obter a soma dos números foi usado ```sum()```.
+Definida a seguinte função: ```def soma_string(linha)``` que usa a função ```re.split``` para dividir a *string* sempre que encontrar uma vírgula. Como devolve uma lista de *strings* foi usado ```map(int...)``` para converter a lista de *strings* em lista de números inteiros. Para obter a soma dos números foi usado ```sum()```.
 
 
 ### Exercício 6: 
