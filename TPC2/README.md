@@ -77,5 +77,5 @@ Definida a seguinte função: ```def underscores(string)``` que usa a função `
 
 
 ### Exercício 10: 
-Definida a seguinte função: ```def codigos_postais(lista)``` que usa a função ```re.split``` para dividir a *string* sempre que encontrar um hífen. Na expressão regular é definido o caractere '-'. Usado o *loop* ```for``` percorre cada código postal separadamente e aplica a função ```re.split```.
+Definida a seguinte função: ```def codigos_postais(lista)``` que usa a função ```re.split``` para dividir a *string* sempre que encontrar um hífen. Na expressão regular é definido o caractere '-'. Usado o *loop* ```for``` que percorre cada código postal separadamente e aplica a função ```re.split```.
 
