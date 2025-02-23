@@ -73,7 +73,7 @@ Definida a seguinte função: ```def inteiros(string)``` que usa a função ```r
 ### Exercício 9: 
 Definida a seguinte função: ```def underscores(string)``` que usa a função ```re.sub``` que vai substituir a expressão regular ```r'\s+'``` por *underscores* na *string*.
 
-***Expressão Regular:*** ```r'\s+'`` - Considera todos os todos os espaços em branco uma ou mais vezes. 
+***Expressão Regular:*** ```r'\s+'``` - Considera todos os todos os espaços em branco uma ou mais vezes. 
 
 
 ### Exercício 10: 
