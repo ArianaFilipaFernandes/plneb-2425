@@ -16,4 +16,25 @@ file = open("../data/dicionario_medico.txt", encoding="utf-8")
 texto = file.read()
 ```
 
-Depois, foi usado ```texto = re.sub(r"\f", "", texto)``` para substituir no ficheiro as quebras de páginas, representadas pela expressão regular ```r"\f"``` por um espaço em branco. De forma a marcar o início de cada parágrafo, substitui-se duas quebras de linha por o caractere ```@``` - ```texto = re.sub(r"\n\n", "\n\n@", texto)```.
+Depois, foi usado ```texto = re.sub(r"\f", "", texto)``` para substituir no ficheiro as quebras de páginas, representadas pela expressão regular ```r"\f"```, por um espaço em branco. De forma a marcar o início de cada parágrafo, substituiu-se duas quebras de linha pelo caractere ```@``` - ```texto = re.sub(r"\n\n", "\n\n@", texto)```.
+
+Com a função ```def limpa_descricao(descricao)``` pretende-se remover espaços extras no início e no fim da string e depois substituir todas as quebras de linha por um espaço. 
+
+Para extrair conceitos implementou-se a seguinte parte do código, que usa a expressão regular ```re.findall```para encontrar todas as ocorrências de conceitos.
+```
+conceitos_raw = re.findall(r"@(.*)\n([^@]*)", texto)
+
+conceitos = [(designacao, limpa_descricao(descricao)) for designacao, descricao in conceitos_raw]
+
+print(conceitos)
+```
+
+**Expressão Regular:** ```r"@(.*)\n([^@]*)"``` - O caractere ```@``` define o início de um conceito e com o ```.```e o ```*``` captura-se tudo até ao final da linha. Com ```\n``` exige uma quebra de linha após o conceito e ```([^@]*)```vai capturar a descrição do conceito até encontrar novamente o caractere ```@```.
+
+
+
+Para gerar o ficheiro HTML, criou-se a função ```def gera_html(conceitos)```. 
+
+
+
+
