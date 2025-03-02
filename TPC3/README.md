@@ -7,7 +7,7 @@ Consta também o ficheiro HTML originado pelo código desenvolvido: dicionario_m
 
 Inicialmente foi necessário recorrer à Shell para que com o comando ```pdftotext``` se converte-se o ficheiro PDF num ficheito ```.txt```.
 
-Depois, no ficheiro aula3_2.py, desenvolveu-se o código que permitiu organizar todo o ficheiro e, no final, gerar um novo ficheiro em formato HTML.
+Depois, no ficheiro aula3_2.py, desenvolveu-se o código necessário para o objetivo mencionado.
 
 Com a seguinte parte de código, abriu-se o ficheiro para poder ser trabalhado.
 ```
