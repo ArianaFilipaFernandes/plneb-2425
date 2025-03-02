@@ -29,10 +29,10 @@ conceitos = [(designacao, limpa_descricao(descricao)) for designacao, descricao 
 print(conceitos)
 ```
 
-**Expressão Regular:** ```r"@(.*)\n([^@]*)"``` - O caractere ```@``` define o início de um conceito e com o ```.```e o ```*``` captura-se tudo até ao final da linha. Com ```\n``` exige uma quebra de linha após o conceito e ```([^@]*)```vai capturar a descrição do conceito até encontrar novamente o caractere ```@```.
+**Expressão Regular:** ```r"@(.*)\n([^@]*)"``` - O caractere ```@``` define o início de um conceito e com o ```.```e o ```*``` captura-se tudo até ao final da linha. Com ```\n``` exige-se uma quebra de linha após o conceito e ```([^@]*)```vai capturar a descrição do conceito até encontrar novamente o caractere ```@```.
 
 
-
+### Gerar HTML
 Para gerar o ficheiro HTML, criou-se a função ```def gera_html(conceitos)```. 
 
 
