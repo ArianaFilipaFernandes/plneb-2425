@@ -32,9 +32,34 @@ print(conceitos)
 **Expressão Regular:** ```r"@(.*)\n([^@]*)"``` - O caractere ```@``` define o início de um conceito e com o ```.```e o ```*``` captura-se tudo até ao final da linha. Com ```\n``` exige-se uma quebra de linha após o conceito e ```([^@]*)```vai capturar a descrição do conceito até encontrar novamente o caractere ```@```.
 
 
-#### Gerar HTML
+### Gerar HTML
 Para gerar o ficheiro HTML, criou-se a função ```def gera_html(conceitos)```. 
+```
+def gera_html(conceitos):
+       html_header = f"""
+              <!DOCTYPE html>
+              <head>
+              <meta charset="UTF-8"/>
+              </head>
+              <body>  
+              <h3>Dicionário de conceitos Médicos</h3>
+              <p>Este dicionário foi desenvolvido para a aula de PLNEB 2024/2025</p>"""
+       html_conceitos = ""
+       for designacao, descricao in conceitos:
+              html_conceitos += f"""
+                            <div>
+                            <p><b>{designacao}</b></p>
+                            <p>{descricao}</p>
+                            </div>
+                            <hr/>
+                     """
 
+       html_footer = """
+                     </body>
+              </html>"""
+       return html_header + html_conceitos + html_footer
+```
 
-
-
+Definiu-se o tipo de documento - ```<!DOCTYPE html>```. Com ```<meta charset="UTF-8"/>``` garante-se suporte para caracteres com acentuação.
+O título do documento definiiu-se com ```<h3>``` e a descrição do documento com ```<p>```.
+Depois criou-se um ciclo ```for``` que percorre a lista ```conceitos``` e adiciona ao documento HTML. 
