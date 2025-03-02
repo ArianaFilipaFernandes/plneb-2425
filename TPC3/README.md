@@ -1,6 +1,7 @@
 # TPC3
 
 Nesta pasta encontra-se o ficheito TPC3.py que é o código desenvolvido para gerar um dicionário médico limpo e organizado em formato ```.txt``` a partir de um ficheiro PDF. 
+Consta também o ficheiro HTML originado pelo código desenvolvido: dicionario_medico.html.
 
 ## Modo de Resolução:
 
@@ -61,5 +62,12 @@ def gera_html(conceitos):
 ```
 
 Definiu-se o tipo de documento - ```<!DOCTYPE html>```. Com ```<meta charset="UTF-8"/>``` garante-se suporte para caracteres com acentuação.
-O título do documento definiiu-se com ```<h3>``` e a descrição do documento com ```<p>```.
-Depois criou-se um ciclo ```for``` que percorre a lista ```conceitos``` e adiciona ao documento HTML. 
+O título do documento definiu-se com ```<h3>``` e a descrição do documento com ```<p>```.
+Depois criou-se um ciclo ```for``` que percorre a lista ```conceitos``` e adiciona ao documento HTML da seguinte forma: ```<p>``` em negrito (```<b>```) para o nome do conceito e novamente um ```<p>``` para a descrição do conceito. Por fim, ```<hr/>``` para separar os conceitos.
+
+No final, fecha-se o HTML (```html_footer =```)
+```return html_header + html_conceitos + html_footer``` junta todas as partes do HTML. 
+
+------------------------------
+
+
