@@ -8,7 +8,7 @@ Inicialmente foi necessário recorrer à Shell para que com o comando ```pdftote
 
 Depois, no ficheiro aula3_2.py, desenvolveu-se o código que permitiu organizar todo o ficheiro e, no final, geral um novo ficheiro em formato HTML.
 
-Com a seguinte parte de código, abriu-se o ficheiro para poder ser trabalho.
+Com a seguinte parte de código, abriu-se o ficheiro para poder ser trabalhado.
 ```
 import re
 
