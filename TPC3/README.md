@@ -70,7 +70,6 @@ No final, fecha-se o HTML (```html_footer =```)
 ```return html_header + html_conceitos + html_footer``` junta todas as partes do HTML. 
 
 
-*Lidar com o problema ```\f```*:
-
+**Lidar com o problema ```\f```**: Esta expressão regular representa as quebras de página. Como foi possível verificar ao longo deste documento, podemos remover as quebras de páginas com espaços em branco, usando a expressão regular ```re.sub(r"\f", "", texto)``` ou podemos marcar as quebras de página, definindo um caractere para tal, também recorrendo à expressão regular ```re.sub```.
 
 ------------------------------
