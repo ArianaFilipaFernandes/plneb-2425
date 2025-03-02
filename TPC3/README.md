@@ -66,8 +66,7 @@ O título do documento definiu-se com ```<h3>``` e a descrição do documento co
 Depois criou-se um ciclo ```for``` que percorre a lista ```conceitos``` e adiciona ao documento HTML da seguinte forma: ```<p>``` em negrito (```<b>```) para o nome do conceito e novamente um ```<p>``` para a descrição do conceito. Por fim, ```<hr/>``` para separar os conceitos.
 
 No final, fecha-se o HTML (```html_footer =```)
+
 ```return html_header + html_conceitos + html_footer``` junta todas as partes do HTML. 
 
 ------------------------------
-
-
