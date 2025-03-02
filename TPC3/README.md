@@ -1,6 +1,6 @@
 # TPC3
 
-Nesta pasta encontra-se o ficheito TPC3.py que é o código desenvolvido para gerar um dicionário médico limpo e organizado em formato ```.txt``` a partir de um ficheiro PDF. 
+Nesta pasta encontra-se o ficheito aula3_2.py que é o código desenvolvido para gerar um dicionário médico limpo e organizado em formato ```.txt``` a partir de um ficheiro PDF. 
 Consta também o ficheiro HTML originado pelo código desenvolvido: dicionario_medico.html.
 
 ## Modo de Resolução:
