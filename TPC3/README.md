@@ -69,4 +69,8 @@ No final, fecha-se o HTML (```html_footer =```)
 
 ```return html_header + html_conceitos + html_footer``` junta todas as partes do HTML. 
 
+
+*Lidar com o problema ```\f```*:
+
+
 ------------------------------
