@@ -34,7 +34,6 @@ def api_conceito(designacao):
 def o_conceito(designacao):
         if designacao in db:
             return render_template("conceito.html", designacao=designacao, descricao=db[designacao])
-
 #-----TPC-----#
 
 
