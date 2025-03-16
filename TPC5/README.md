@@ -19,7 +19,7 @@ Para verificar o conceito é necessário aceder a (http://localhost:4002/conceit
 
 2) Para a segunda parte do tpc, foi necessário alterar o ficheito ```conceitos.html``` com a introdução de links.
 
-A alteração consistiu em acrescentar ```<a href="{{ url_for('o_conceito', designacao=designacao) }}">{{ designacao }}</a>``` na lsita dos elementos.
+A alteração consistiu em acrescentar ```<a href="{{ url_for('o_conceito', designacao=designacao) }}">{{ designacao }}</a>``` na lista dos elementos.
 
 ------------------------------
 
