@@ -8,6 +8,13 @@ Ao trabalho já desenvolvido na aula, foi adicionado um ficheiro html de nome "c
 
 Depois, foi criada então a rota ```conceitos/<designacao>```:
 
+```
+@app.route("/conceitos/<designacao>")
+def o_conceito(designacao):
+        if designacao in db:
+            return render_template("conceito.html", designacao=designacao, descricao=db[designacao])
+```
+
 
 ------------------------------
 
