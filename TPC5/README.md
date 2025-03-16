@@ -15,6 +15,8 @@ def o_conceito(designacao):
             return render_template("conceito.html", designacao=designacao, descricao=db[designacao])
 ```
 
+Para verificaro conceito é necessário aceder a (http://localhost:4002/conceitos/vida), em que onde temos a palavra "vida" deverá estar o nome do conceito que pretendemos consultar.
+
 
 ------------------------------
 
