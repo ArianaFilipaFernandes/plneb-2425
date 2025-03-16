@@ -4,6 +4,9 @@ Para este tpc foi pedido a criação da rota ```conceitos/<designacao>``` que pe
 
 ## Modo de Resolução:
 
+Ao trabalho já desenvolvido na aula, foi adicionado um ficheiro html de nome "conceito", para que a função ```render_template``` possa usá-lo para preenchê-lo com o nome do conceito (designacao) e a respetiva descrição (descricao).
+
+Depois, foi criada então a rota ```conceitos/<designacao>```:
 
 
 ------------------------------
