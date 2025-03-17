@@ -18,6 +18,7 @@ Para este tpc:
 ## Modo de Resolução:
 
 Inicialmente para adicionar o botão "Pesquisar" na *navbar*, foi inserido a seguinte âncora no ficheiro ```layout.html```:
+
 ```<a class="nav-link" href="/pesquisar">Pesquisar</a>``` 
 
 Depois foi criada a rota ```/pesquisar```:
