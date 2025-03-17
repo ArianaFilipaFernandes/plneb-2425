@@ -31,5 +31,18 @@ def pesquisar():
 
 Também foi criado na diretoria ```templates```o ficheiro ```pesquisar.html```.
 
+Foi adaptado o *Form* *Overview* do *bootstrap*:
+
+```
+   <form>
+        <div class="mb-3">
+            <label for="conceito_input" class="form-label">Conceito</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text" id="conceito_input">Insira o conceito que pretende pesquisar</div>
+        </div>
+        <button type="Submit" class="btn btn-primary">Pesquisar conceito</button>
+    </form>
+``` 
+
 ------------------------------
 
