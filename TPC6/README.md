@@ -18,23 +18,17 @@ Para este tpc:
 ## Modo de Resolução:
 
 Inicialmente para adicionar o botão "Pesquisar" na *navbar*, foi inserido a seguinte âncora no ficheiro ```layout.html```:
-```<a class="nav-link" href="/conceitos">Pesquisar</a>``` (alterar aqui a rota) 
-   
+```<a class="nav-link" href="/pesquisar">Pesquisar</a>``` 
 
-Depois, foi criada então a rota ```conceitos/<designacao>```:
+Depois foi criada a rota ```/pesquisar```:
 
 ```
-@app.route("/conceitos/<designacao>")
-def o_conceito(designacao):
-        if designacao in db:
-            return render_template("conceito.html", designacao=designacao, descricao=db[designacao])
+@app.route("/pesquisar")
+def pesquisar():
+    return render_template("pesquisar.html")
 ```
 
-Para verificar o conceito é necessário aceder a (http://localhost:4002/conceitos/vida), em que onde temos a palavra "vida" deverá estar o nome do conceito que pretendemos consultar.
-
-2) Para a segunda parte do tpc, foi necessário alterar o ficheito ```conceitos.html``` com a introdução de links.
-
-A alteração consistiu em acrescentar ```<a href="{{ url_for('o_conceito', designacao=designacao) }}">{{ designacao }}</a>``` na lista dos elementos.
+Também foi criado na diretoria ```templates```o ficheiro ```pesquisar.html```.
 
 ------------------------------
 
