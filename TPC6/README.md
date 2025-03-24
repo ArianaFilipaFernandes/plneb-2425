@@ -38,4 +38,4 @@ Foi adaptado o *Form* *Overview* do *bootstrap*:
 
 ------------------------------
 > [!NOTE]
-> Este trabalho de casa não foi terminado a tempo da aula 24/03/2025 devido a algumas dificuldades. Como foi terminado na aula, apresento aqui apenas o trabalho que tinha desenvolvido para o tpc.
+> Este trabalho de casa não foi terminado a tempo da aula do dia 24/03/2025 devido a algumas dificuldades. Como foi terminado na aula, apresento aqui apenas o trabalho que tinha desenvolvido para o tpc.
