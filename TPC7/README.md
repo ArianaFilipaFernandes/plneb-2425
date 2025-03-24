@@ -58,7 +58,7 @@ $(document).ready( function () {
 });
 
 ```
-Foi só adicionar a flag ```search: {regex: true}```.
+Foi só adicionar a flag ```search: {regex: true}``` no ficheiro onde foi criada a tabela (```conceitos.js```).
 
 
 
