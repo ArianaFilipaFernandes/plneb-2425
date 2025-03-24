@@ -48,7 +48,7 @@ def conceitos_tabela():
 
 4) Para ativar a pesquisa com expressões regulares, como sugerido na aula, recorreu-se à página [DataTables] (https://datatables.net/).
 
-   ```
+```
 $(document).ready( function () {
     $('#tabela_conceitos').DataTable({
         search: {
