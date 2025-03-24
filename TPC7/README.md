@@ -56,6 +56,7 @@ $(document).ready( function () {
     }
     });
 });
+
 ```
 Foi só adicionar a flag ```search: {regex: true}```.
 
