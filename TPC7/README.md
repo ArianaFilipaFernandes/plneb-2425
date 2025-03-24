@@ -1,24 +1,58 @@
 # TPC7
 
-O objetivo para este tpc é terminar a página e adicionar ao menu uma tabela bem construída, usando um estilo (por exemplo bootstrap 5) e ativar a pesquisa com expressões regulares.
+O objetivo para este tpc é adicionar ao menu uma tabela bem construída, usando um estilo (por exemplo bootstrap 5) e ativar a pesquisa com expressões regulares.
 
 ## Modo de Resolução:
 
-1) Ao trabalho já desenvolvido na aula, foi adicionado um ficheiro html de nome "conceito", para que a função ```render_template``` possa usá-lo para preenchê-lo com o nome do conceito (designacao) e a respetiva descrição (descricao).
-
-Depois, foi criada então a rota ```conceitos/<designacao>```:
+1) Inicialmente, ao ficheiro ```tabela.html```criado na aula, foram feitas as alterações necessárias para que a tabela ficasse com o aspeto pretendido. Denominou-se as colunas de "Designação" e "Descrição" e criou-se um ciclo ```for``` para que a tabela seja preenchida com os dados da base de dados (```db```). 
 
 ```
-@app.route("/conceitos/<designacao>")
-def o_conceito(designacao):
-        if designacao in db:
-            return render_template("conceito.html", designacao=designacao, descricao=db[designacao])
+{% extends 'layout.html' %}
+
+{% block head %}
+<title> Tabela </title>
+{% endblock %}
+
+{% block body %}
+
+<table id="tabela_conceitos" class="display">
+    <thead>
+        <tr>
+            <th>Designação</th>
+            <th>Descrição</th>
+        </tr>
+    </thead>
+    <tbody>
+        {%for designacao, descricao in database %}
+            <tr>
+                <td>{{ designacao }}</td>
+                <td>{{ descricao }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
+
 ```
 
-Para verificar o conceito é necessário aceder a (http://localhost:4002/conceitos/vida), em que onde temos a palavra "vida" deverá estar o nome do conceito que pretendemos consultar.
+2) Depois, atualizou-se a rota já criada ```@app.get("/conceitos/tabela"):
 
-2) Para a segunda parte do tpc, foi necessário alterar o ficheito ```conceitos.html``` com a introdução de links.
+```
+@app.get("/conceitos/tabela")
+def conceitos_tabela():
+    return render_template("tabela.html", database=db.items(), title="Tabela de Conceitos")
+```
 
-A alteração consistiu em acrescentar ```<a href="{{ url_for('o_conceito', designacao=designacao) }}">{{ designacao }}</a>``` na lista dos elementos.
+
+
+
+
+
+
+
+
+
+
 
 ------------------------------
