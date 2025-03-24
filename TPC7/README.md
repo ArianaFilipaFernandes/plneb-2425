@@ -46,6 +46,18 @@ def conceitos_tabela():
 
 3) Na ```navbar``` da página foi adicionada a opção "Tabela de Conceitos" para um acesso direto a esta. Para isso, no ficheiro ```layout.html``` foi adicionada a âncora ```<a class="nav-link" href="/conceitos/tabela">Tabela de Conceitos</a>``` dentro do ```body```. 
 
+4) Para ativar a pesquisa com expressões regulares, como sugerido na aula, recorreu-se à página [DataTables] (https://datatables.net/).
+
+   ```
+$(document).ready( function () {
+    $('#tabela_conceitos').DataTable({
+        search: {
+        regex: true
+    }
+    });
+});
+```
+Foi só adicionar a flag ```search: {regex: true}```.
 
 
 
