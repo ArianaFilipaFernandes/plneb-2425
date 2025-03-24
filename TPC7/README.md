@@ -4,7 +4,7 @@ O objetivo para este tpc é adicionar ao menu uma tabela bem construída, usando
 
 ## Modo de Resolução:
 
-1) Inicialmente, ao ficheiro ```tabela.html```criado na aula denominou-se as colunas de "Designação" e "Descrição" e criou-se um ciclo ```for``` para que a tabela seja preenchida com os dados da base de dados (```db```). 
+1) Inicialmente, ao ficheiro ```tabela.html```criado na aula denominou-se as colunas de "Designação" e "Descrição" e criou-se um ciclo ```for``` para que a tabela seja preenchida com os dados da base de dados. 
 
 ```
 {% extends 'layout.html' %}
