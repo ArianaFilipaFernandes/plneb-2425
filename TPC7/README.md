@@ -36,7 +36,7 @@ O objetivo para este tpc é adicionar ao menu uma tabela bem construída, usando
 
 ```
 
-2) Depois, atualizou-se a rota já criada ```@app.get("/conceitos/tabela")``` :
+2) Depois, atualizou-se a rota já criada ```@app.get("/conceitos/tabela")```:
 
 ```
 @app.get("/conceitos/tabela")
@@ -44,6 +44,7 @@ def conceitos_tabela():
     return render_template("tabela.html", database=db.items(), title="Tabela de Conceitos")
 ```
 
+3) Na ```navbar``` da página foi adicionada a opção "Tabela de Conceitos" para um acesso direto a esta. Para isso, no ficheiro ```layout.html``` foi adicionada a âncora ```<a class="nav-link" href="/conceitos/tabela">Tabela de Conceitos</a>``` dentro do ```body```. 
 
 
 
