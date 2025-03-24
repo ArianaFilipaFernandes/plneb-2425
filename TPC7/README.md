@@ -58,7 +58,9 @@ $(document).ready( function () {
 });
 
 ```
-Foi só adicionar a flag ```search: {regex: true}``` no ficheiro onde foi criada a tabela (```conceitos.js```).
+Foi então necessário adicionar a flag ```search: {regex: true}``` no ficheiro onde foi criada a tabela (```conceitos.js```).
+
+5) Para que a tabela ficasse com o aspeto desejado, recorreu-se mais uma vez à página [DataTables](https://datatables.net/examples/styling/) e à pagina de customização de tabelsa do [Boostrap](https://getbootstrap.com/docs/5.3/content/tables/). O estilo escolhido foi ```Boostrap 3```. 
 
 
 
