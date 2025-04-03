@@ -5,4 +5,5 @@ Objetivo: Consultar o html do content e extrair por categorias todos os elemento
 
 ## Modo de Resolução:
 
-Inicialmente foi criada a função ```def get_infos_completas(html_infos)``` que permite extrair as informações de forma seccionada da página 
+Inicialmente foi criada a função ```def get_infos_completas(html_infos)``` que permite extrair as informações das doenças de forma seccionada da página [Atlas da Saúde](https://www.atlasdasaude.pt/doencasAaZ).
+
